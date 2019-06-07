@@ -1,3 +1,6 @@
-import { greet } from "./greeting"
+import React from "react"
+import ReactDOM from "react-dom"
 
-greet()
+import Greeting from "./greeting"
+
+ReactDOM.render(<Greeting name="Marta" />, document.getElementById("app"))

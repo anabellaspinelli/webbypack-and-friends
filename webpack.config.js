@@ -6,5 +6,16 @@ module.exports = {
     path: path.join(__dirname, "dist"), // cannot be relative
     filename: "app.bundle.js",
   },
-  mode: "development",
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        loader: "babel-loader",
+        exclude: /node_modules/,
+        options: {
+          presets: ["@babel/preset-env", "@babel/preset-react"],
+        },
+      },
+    ],
+  },
 }
