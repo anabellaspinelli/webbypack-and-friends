@@ -2,7 +2,7 @@ import React from "react"
 
 class Greeting extends React.Component {
   render() {
-    return <div>{this.props.name}</div>
+    return <div>{"Hello " + this.props.name}</div>
   }
 }
 
