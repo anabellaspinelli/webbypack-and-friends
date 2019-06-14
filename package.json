@@ -14,7 +14,8 @@
     "webpack-cli": "^3.3.2"
   },
   "scripts": {
-    "build": "webpack"
+    "build": "webpack",
+    "dev": "webpack --watch --mode development"
   },
   "dependencies": {
     "prop-types": "^15.7.2",
