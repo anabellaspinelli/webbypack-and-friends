@@ -39,3 +39,42 @@ Changed `greeting.js` to be a React component and used it in `index.js` together
 ### Added HTMLWebpackPlugin [↗](https://github.com/anabellaspinelli/webbypack-and-friends/commit/d34fe1f40f87604b5f0d5fc924b0f78e1689bf9c)
 
 Added HTMLWebpack Plugin to help Webpack deal with HTML files. Now it actually has a root node to attach the app with using ReactDOM.
+
+### Added dev script with watch[↗](https://github.com/anabellaspinelli/webbypack-and-friends/commit/80c06805875098951bebf92dff80bc34a0ad26a4)
+
+Added a `dev` script with two options:
+
+- `--watch` so that project is re-built on every file save
+- `--mode development` to improve bundle file readability
+
+### Added two separate configs for dev and prod[↗](https://github.com/anabellaspinelli/webbypack-and-friends/commit/e9d48279914b10ee38619dd745b3404dfd30596a)
+
+Added webpack-merge to merge configs.
+
+Then created a `base` config and two variants: `dev` and `prod`. So far the only difference is `mode:` key.
+
+### Added webpack-dev-server[↗](https://github.com/anabellaspinelli/webbypack-and-friends/commit/263f28bc3ab7653396ac02f78cd593c44e3d5c1e)
+
+Added webpack-dev-server to serve the app on localhost.
+
+### Added source map[↗](https://github.com/anabellaspinelli/webbypack-and-friends/commit/263f28bc3ab7653396ac02f78cd593c44e3d5c1e)
+
+Added source map to get the actual source code in development mode.
+
+### Added CSS Loaders[↗](https://github.com/anabellaspinelli/webbypack-and-friends/commit/f4d182b6fa02d8fe30b424df288f13f52e1cc17d)
+
+Added CSS file with browser styles reset and css loaders to process it.
+
+### Added class properties plugin[↗](https://github.com/anabellaspinelli/webbypack-and-friends/commit/f6f1c3764e29f90c0c17a126a63a86e0e18a9da8)
+
+Added class properties plugin to be able to use things like:
+
+```js
+class Component extends React.Component {
+  state = {
+    counter: 0,
+  }
+}
+```
+
+Then actually used this by changing the app to the basic react counter example.
