@@ -1,4 +1,6 @@
 # Webbypack and friends!
+[@mbondyra](https://github.com/mbondyra) is helping me to learn Webpack!
+
 We're creating a React project with Webpack from scratch. Doing one thing at a time and checking the output from Webpack without any boilerplate generators like Create React App. 
 
 **Amazing!**
