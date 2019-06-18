@@ -1,4 +1,9 @@
 # Webbypack and friends!
+We're creating a React project with Webpack from scratch. Doing one thing at a time and checking the output from Webpack without any boilerplate generators like Create React App. 
+
+**Amazing!**
+
+![](https://i.redd.it/74p4abo7wi721.png)
 
 We're creating a React project with Webpack from scratch. Doing one thing at a time and checking the output from Webpack without any boilerplate generators like Create React App. Amazing!
 
