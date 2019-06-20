@@ -37,11 +37,12 @@ Added webpack.config.js making the default config explicit.
 
 Added react, react-dom as dependencies.
 
-Added Babel, Babel CLI, and other Babel plugins. Also babel-loader.
+Added Babel, Babel CLI, and babel-loader to manage plugins. This allows for using new imports.
 
 Changed `greeting.js` to be a React component and used it in `index.js` together with ReactDOM.
 
 > How does ReactDOM know where to append the app if there's no HTML? 🤔
+> It doesn't! At this point in time the app will crash.
 
 ### Added HTMLWebpackPlugin [↗](https://github.com/anabellaspinelli/webbypack-and-friends/commit/d34fe1f40f87604b5f0d5fc924b0f78e1689bf9c)
 
@@ -87,3 +88,8 @@ class Component extends React.Component {
 ```
 
 Then actually used this by changing the app to the basic react counter example.
+
+### Hot realoading
+
+Live reloading ==> needs refreshing the page
+Hot reloading ==> updating the code in the app without updating the state
