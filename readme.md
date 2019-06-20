@@ -47,6 +47,8 @@ Changed `greeting.js` to be a React component and used it in `index.js` together
 
 Added HTMLWebpack Plugin to help Webpack deal with HTML files. Now it actually has a root node to attach the app with using ReactDOM.
 
+---
+
 ### Added dev script with watch[↗](https://github.com/anabellaspinelli/webbypack-and-friends/commit/80c06805875098951bebf92dff80bc34a0ad26a4)
 
 Added a `dev` script with two options:
