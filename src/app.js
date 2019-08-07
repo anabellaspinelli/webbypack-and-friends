@@ -10,14 +10,16 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <h1>Count: {this.state.count}</h1>
+        <h1 data-testid="count">Count: {this.state.count}</h1>
         <button
+          data-testid="Minus"
           onClick={() => this.setState(state => ({ count: state.count - 1 }))}
         >
           -
         </button>
         <button
           onClick={() => this.setState(state => ({ count: state.count + 1 }))}
+          data-testid="Plus"
         >
           +
         </button>
